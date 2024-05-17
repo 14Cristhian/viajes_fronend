@@ -1,0 +1,31 @@
+{
+  "trips": "Reisen",
+  "tripInformation": "Reiseinformationen",
+
+  "onChangeLanguage": "Sprache ändern",
+  "viewHistory": "Verlauf anzeigen",
+  "countryLabel": "Wählen Sie ein Land aus:",
+  "cityLabel": "Wählen Sie eine Stadt aus:",
+  "selectCountry": "Sie müssen ein Land und eine Stadt auswählen, bevor Sie fortfahren können.",
+  "errorText": "Sie müssen ein Land und eine Stadt auswählen, bevor Sie fortfahren können.",
+
+  "budget": "Geben Sie das Budget in kolumbianischen Pesos (COP) ein",
+  "budgetError": "Geben Sie ein Budget ein, bevor Sie fortfahren.",
+  "budgetCop": "Budget in COP",
+  "budgetConvert": "Konvertiertes Budget:",
+  "rate": "Wechselkurs",
+  "localCurrency": "Landeswährung",
+
+  "country": "Land",
+  "city": "Stadt",
+  "informationDestination": "Informationen zum Zielort",
+  "climate": "Wetter heute:",
+  "weather": "Klima",
+
+  "home": "Zurück zur Startseite",
+  "next": "Nachfolgend",
+  "back": "Zurück",
+
+  "load": "Aufladen",
+  "HELLO": "Hallo Welt"
+}

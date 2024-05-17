@@ -1,0 +1,41 @@
+<div class="container" *ngIf="loading; else dataLoaded">
+  <p>{{ "load" | translate }}</p>
+</div>
+
+<ng-template #dataLoaded>
+  <div class="container">
+    <div class="table-responsive table-responsive-sm">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th class="col-auto">{{ "country" | translate }}</th>
+            <th class="col-auto">{{ "city" | translate }}</th>
+            <th class="col-auto">{{ "budgetCop" | translate }}</th>
+            <th class="col-auto">{{ "weather" | translate }}</th>
+            <th class="col-auto">{{ "localCurrency" | translate }}</th>
+            <th class="col-auto">{{ "rate" | translate }}</th>
+            <th class="col-auto">x</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of data">
+            <td class="col-auto">{{ item.pais }}</td>
+            <td class="col-auto">{{ item.ciudad }}</td>
+            <td class="col-auto">{{ item.presupuesto }}</td>
+            <td class="col-auto">{{ item.clima }}</td>
+            <td class="col-auto">{{ item.monedaLocal }}</td>
+            <td class="col-auto">{{ item.tasaCambio }}</td>
+            <td class="col-auto">
+              <i
+                class="fas fa-times text-danger"
+                (click)="eliminarRegistro(item.id)"
+                style="cursor: pointer"
+                >x</i
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</ng-template>

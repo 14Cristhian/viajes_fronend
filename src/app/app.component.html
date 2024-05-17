@@ -1,0 +1,70 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/pantalla1">{{ "trips" | translate }}</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            {{ "onChangeLanguage" | translate }}
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a
+                class="dropdown-item"
+                (click)="switchLanguage('es')"
+                style="cursor: pointer"
+              >
+                Español
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="dropdown-item"
+                (click)="switchLanguage('de')"
+                style="cursor: pointer"
+              >
+                Alemán
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/consulta">
+            {{ "viewHistory" | translate }}</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- <nav>
+  <ul>
+    <li>
+      <a routerLink="pantalla1">Pantalla1</a>
+      <a routerLink="pantalla2">Pantalla2</a>
+      <a routerLink="pantalla3">Pantalla3</a>
+    </li>
+  </ul>
+</nav> -->
+
+<router-outlet />

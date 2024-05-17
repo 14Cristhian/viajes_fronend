@@ -1,0 +1,77 @@
+<div class="d-flex flex-column">
+  <div class="flex-grow-1">
+    <div class="container">
+      <div class="row d-flex justify-content-center py-5">
+        <div class="col-md-6">
+          <div *ngIf="loading" class="text-center">
+            <p>{{ "load" | translate }}</p>
+          </div>
+
+          <div *ngIf="!loading" class="mb-4">
+            <h2>{{ "tripInformation" | translate }}</h2>
+            <p>
+              <strong>{{ "country" | translate }}: </strong>
+              {{ pais }}
+            </p>
+            <p>
+              <strong>{{ "city" | translate }}: </strong>
+              {{ ciudad }}
+            </p>
+            <p>
+              <strong>{{ "budgetCop" | translate }}: </strong>
+              {{ presupuesto }}
+            </p>
+            <p>
+              <strong>{{ "budgetConvert" | translate }}: </strong>
+              {{ presupuestoConvertido }} {{ selectedCountryCode }}
+            </p>
+            <p>
+              <strong>{{ "rate" | translate }}</strong>
+              {{ tasaCambio }}
+            </p>
+            <button class="btn btn-primary me-2" (click)="volverAPantalla1()">
+              {{ "home" | translate }}
+            </button>
+          </div>
+        </div>
+
+        <div *ngIf="!loading" class="col-md-6">
+          <div class="card text-body" style="border-radius: 35px">
+            <div class="card-body p-4">
+              <div class="d-flex">
+                <h6 class="flex-grow-1">{{ pais }}</h6>
+                <h6>15:07</h6>
+              </div>
+              <div class="d-flex flex-column text-center mt-5 mb-4">
+                <h6 class="display-4 mb-0 font-weight-bold">{{ clima }} °C</h6>
+                <span class="small" style="color: #868b94">{{ ciudad }}</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <div class="flex-grow-1" style="font-size: 1rem">
+                  <div>
+                    <i class="fas fa-wind fa-fw" style="color: #868b94"></i>
+                    <span class="ms-1">{{ velocidadViento }} km/h</span>
+                  </div>
+                  <div>
+                    <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
+                    <span class="ms-1">{{ humedad }}%</span>
+                  </div>
+                  <div>
+                    <i class="fas fa-sun fa-fw" style="color: #868b94"></i>
+                    <span class="ms-1">{{ duracionSol }}h</span>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
+                    width="100px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

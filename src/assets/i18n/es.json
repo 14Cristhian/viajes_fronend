@@ -1,0 +1,31 @@
+{
+  "trips": "Viajes",
+  "tripInformation": "Información del Viaje",
+
+  "onChangeLanguage": "Cambio de idioma",
+  "viewHistory": "Ver historial",
+  "countryLabel": "Selecciona un país:",
+  "cityLabel": "Selecciona una ciudad:",
+  "selectCountry": " Debes seleccionar un país y una ciudad antes de continuar.",
+  "errorText": "Debes seleccionar un país y una ciudad antes de continuar.",
+
+  "budget": "Ingrese el presupuesto en pesos colombianos (COP)",
+  "budgetError": "Ingrese un presupuesto antes de continuar",
+  "budgetCop": "Presupuesto en COP",
+  "budgetConvert": "Presupuesto Convertido: ",
+  "rate": "Tasa de Cambio",
+  "localCurrency": "Moneda local",
+
+  "country": "Pais",
+  "city": "Ciudad",
+  "informationDestination": "Información del Destino",
+  "climate": "Clima hoy: ",
+  "weather": "Clima",
+
+  "home": "Volver al inicio",
+  "next": "Siguiente",
+  "back": "Atrás",
+
+  "load": "Cargando...",
+  "HELLO": "Hola mundo"
+}
